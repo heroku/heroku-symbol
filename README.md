@@ -3,6 +3,14 @@
 Enable symbolic attachment rendering of the config_var endpoint in the
 `heroku config` index view only.
 
+Install it with:
+
+```sh
+heroku plugins:install git@github.com:heroku/heroku-symbol.git
+```
+
+## Examples
+
 Before:
 
 ```sh
