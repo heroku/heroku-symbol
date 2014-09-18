@@ -33,7 +33,9 @@ HEROKU_POSTGRESQL_GOLD_URL: postgres://AHH:SECRETS@ec2-107-20-137-251.compute-1.
 
 ## Implementation
 
-What is included is a copy of the original `heroku config` commmand implementation, with the minor addition of including the `symbolize=true` parameter:
+What is included is a copy of the original `heroku config` commmand
+implementation, with the minor addition of including the
+`symbolic=true` parameter:
 
 ```ruby
       vars = if options[:shell]
