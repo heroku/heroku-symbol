@@ -9,6 +9,34 @@ Install it with:
 heroku plugins:install git@github.com:heroku/heroku-symbol.git
 ```
 
+## Why
+
+Resource symbols provide a number of improvements to the user
+experience:
+
+* Allow unambiguous creation of attachments between apps via
+  `config:set`.
+
+* Obscure sensitive connection strings and secrets when printing to
+  the console.
+
+* Prevent secrets from leaking into bash history as customers use
+  `config:set` with cut-and-paste from `config`.
+
+* Show meaningful values to user that help them associate config vars
+  with the resources they own.
+
+* Allow showing meaningful errors to users if they try to create an
+  invalid attachment.
+
+They aren't designed to completely block access to sensitive
+information and will still provide a mechanism for users to reveal
+their secrets when necessary.
+
+The prior text was adapted from a
+[writeup](https://gist.github.com/brandur/22d1619aad74d08d2ad0) by
+Brandur Leach.
+
 ## Examples
 
 Before:
