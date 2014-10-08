@@ -1,4 +1,4 @@
-if !ENV['DISABLE_HEROKU_SYMBOL']
+if !ENV['DISABLE_HEROKU_SYMBOL'] && Heroku::VERSION < '3.12.1'
   require "heroku/command/base"
 
   # manage app config vars
@@ -49,4 +49,7 @@ if !ENV['DISABLE_HEROKU_SYMBOL']
       end
     end
   end
+else
+  $stderr.puts(" !    DEPRECATED: 'heroku-symbol' plugin is obsolete in this version of Heroku Toolbelt.  ")
+  $stderr.puts(" !    DEPRECATED: A plugin can be removed with 'heroku plugins:uninstall heroku-symbol'.")
 end
