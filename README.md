@@ -1,5 +1,12 @@
 # Heroku Symbol
 
+# OBSOLETE
+
+The functionality was merged and released in Heroku Toolbelt 3.12.1
+([patch](https://github.com/heroku/heroku/commit/571b1c5bab511d63f5b9c689576b6f33fee874dd)).
+
+# Introduction
+
 Enable symbolic attachment rendering of the config_var endpoint in the
 `heroku config` index view only.
 
